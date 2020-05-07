@@ -1,0 +1,57 @@
+{
+    "telemetry.enableTelemetry": false,
+    "cSpell.language": "en,ru",
+    "python.linting.pylintArgs": [
+        "--init-hook='import sys; sys.path.append(\"/usr/local/lib/python3.6/dist-packages\")'"
+    ],
+    "languageServerHaskell.hieExecutablePath": "/Users/worm2fed/.local/bin/hie",
+    "languageServerHaskell.hlintOn": true,
+    "[haskell]": {
+        "editor.defaultFormatter": "alanz.vscode-hie-server"
+    },
+    "python.pythonPath": "python3",
+    "python.venvFolders": [
+        "~/workspace/venvs"
+    ],
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            "singleQuote": true
+        }
+    },
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.integrated.rendererType": "dom",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.tips.enabled": false,
+    "workbench.colorCustomizations": {
+        "editor.findMatchBackground": "#8a7fff",
+        "editor.findMatchBorder": "#8a7fff",
+        "editor.findMatchHighlightBorder": "#8a7fff",
+        "editorInfo.foreground": "#8a7fff",
+        "editorError.foreground": "#ff8a7f",
+        "editorWarning.foreground": "#f4ff7f",
+        "editorHint.foreground": "#7fffca",
+        "gitDecoration.addedResourceForeground": "#7fffca",
+        "editorGutter.addedBackground": "#7fffca",
+        "gitDecoration.modifiedResourceForeground": "#f4ff7f",
+        "editorGutter.modifiedBackground": "#f4ff7f",
+        "gitDecoration.deletedResourceForeground": "#ff8a7f",
+        "editorGutter.deletedBackground": "#ff8a7f",
+    },
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 12,
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wrappingIndent": "indent",
+    "cSpell.userWords": [
+        "номинатор",
+        "номинатора",
+        "приоритетнее"
+    ],
+}
