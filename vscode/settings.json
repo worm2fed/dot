@@ -1,17 +1,14 @@
 {
     "telemetry.enableTelemetry": false,
     "cSpell.language": "en,ru",
-    "python.linting.pylintArgs": [
-        "--init-hook='import sys; sys.path.append(\"/usr/local/lib/python3.6/dist-packages\")'"
-    ],
     "languageServerHaskell.hieExecutablePath": "/Users/worm2fed/.local/bin/hie",
     "languageServerHaskell.hlintOn": true,
     "[haskell]": {
         "editor.defaultFormatter": "alanz.vscode-hie-server"
     },
     "python.pythonPath": "python3",
-    "python.venvFolders": [
-        "~/workspace/venvs"
+    "python.linting.pylintArgs": [
+        "--init-hook='import sys; sys.path.append(\"/usr/local/lib/python3.6/dist-packages\")'"
     ],
     "vetur.format.defaultFormatter.js": "vscode-typescript",
     "vetur.format.defaultFormatterOptions": {
