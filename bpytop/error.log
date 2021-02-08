@@ -1,0 +1,228 @@
+25/12/20 (03:07:23) | ERROR: [Errno 12] Cannot allocate memory
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3097, in _get_nics
+    io_all = psutil.net_io_counters(pernic=True)
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/__init__.py", line 2109, in net_io_counters
+    rawdict = _psplatform.net_io_counters()
+OSError: [Errno 12] Cannot allocate memory
+25/12/20 (03:07:23) | ERROR: Data collection thread failed with exception: local variable 'io_all' referenced before assignment
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 2608, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3132, in _collect
+    cls._get_nics()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3102, in _get_nics
+    if not io_all: return
+UnboundLocalError: local variable 'io_all' referenced before assignment
+25/12/20 (03:07:25) | WARNING: Exiting with errorcode (1). Runtime 9:42:59 
+
+28/12/20 (16:04:21) | ERROR: Data collection thread failed with exception: [Errno 12] Cannot allocate memory
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 2608, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3132, in _collect
+    cls._get_nics()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3103, in _get_nics
+    up_stat = psutil.net_if_stats()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/__init__.py", line 2216, in net_if_stats
+    return _psplatform.net_if_stats()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/_psosx.py", line 262, in net_if_stats
+    names = net_io_counters().keys()
+OSError: [Errno 12] Cannot allocate memory
+28/12/20 (16:04:22) | WARNING: Exiting with errorcode (1). Runtime 4:47:36 
+
+01/01/21 (23:10:22) | ERROR: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1342, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1417, in connect
+    super().connect()
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 921, in connect
+    self.sock = self._create_connection(
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 822, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 4324, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1385, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1345, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+01/01/21 (23:11:09) | ERROR: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1342, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1417, in connect
+    super().connect()
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 921, in connect
+    self.sock = self._create_connection(
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 822, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 4324, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1385, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1345, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+01/01/21 (23:14:08) | ERROR: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1342, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1417, in connect
+    super().connect()
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 921, in connect
+    self.sock = self._create_connection(
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 822, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 4324, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1385, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1345, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+04/01/21 (11:53:14) | ERROR: [Errno 12] Cannot allocate memory
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3097, in _get_nics
+    io_all = psutil.net_io_counters(pernic=True)
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/__init__.py", line 2109, in net_io_counters
+    rawdict = _psplatform.net_io_counters()
+OSError: [Errno 12] Cannot allocate memory
+04/01/21 (11:53:14) | ERROR: Data collection thread failed with exception: local variable 'io_all' referenced before assignment
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 2608, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3132, in _collect
+    cls._get_nics()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3102, in _get_nics
+    if not io_all: return
+UnboundLocalError: local variable 'io_all' referenced before assignment
+04/01/21 (11:53:15) | WARNING: Exiting with errorcode (1). Runtime 2 days, 12:07:16 
+
+04/01/21 (17:31:11) | ERROR: [Errno 12] Cannot allocate memory
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3097, in _get_nics
+    io_all = psutil.net_io_counters(pernic=True)
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/__init__.py", line 2109, in net_io_counters
+    rawdict = _psplatform.net_io_counters()
+OSError: [Errno 12] Cannot allocate memory
+04/01/21 (17:31:11) | ERROR: Data collection thread failed with exception: local variable 'io_all' referenced before assignment
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 2608, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3132, in _collect
+    cls._get_nics()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3102, in _get_nics
+    if not io_all: return
+UnboundLocalError: local variable 'io_all' referenced before assignment
+04/01/21 (17:31:13) | WARNING: Exiting with errorcode (1). Runtime 1:54:45 
+
+06/01/21 (00:58:33) | ERROR: [Errno 12] Cannot allocate memory
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3097, in _get_nics
+    io_all = psutil.net_io_counters(pernic=True)
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/__init__.py", line 2109, in net_io_counters
+    rawdict = _psplatform.net_io_counters()
+OSError: [Errno 12] Cannot allocate memory
+06/01/21 (00:58:33) | ERROR: Data collection thread failed with exception: local variable 'io_all' referenced before assignment
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 2608, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3132, in _collect
+    cls._get_nics()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3102, in _get_nics
+    if not io_all: return
+UnboundLocalError: local variable 'io_all' referenced before assignment
+06/01/21 (00:58:35) | WARNING: Exiting with errorcode (1). Runtime 3:46:32 
+
+18/01/21 (18:27:28) | ERROR: Data collection thread failed with exception: [Errno 12] Cannot allocate memory
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 2608, in _runner
+    collector._collect()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3132, in _collect
+    cls._get_nics()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/bpytop.py", line 3103, in _get_nics
+    up_stat = psutil.net_if_stats()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/__init__.py", line 2216, in net_if_stats
+    return _psplatform.net_if_stats()
+  File "/usr/local/Cellar/bpytop/1.0.52/libexec/lib/python3.9/site-packages/psutil/_psosx.py", line 262, in net_if_stats
+    names = net_io_counters().keys()
+OSError: [Errno 12] Cannot allocate memory
+18/01/21 (18:27:30) | WARNING: Exiting with errorcode (1). Runtime 20:40:24 
+

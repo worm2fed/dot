@@ -8,7 +8,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.40000000596046448
   },
-  "Rows" : 20,
+  "Rows" : 24,
   "Ansi 11 Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -17,7 +17,7 @@
     "Green Component" : 0.94509810209274292
   },
   "Use Italic Font" : true,
-  "HotKey Characters" : "",
+  "HotKey Characters" : "`",
   "Foreground Color" : {
     "Red Component" : 0.80392158031463623,
     "Color Space" : "sRGB",
@@ -127,6 +127,7 @@
       "algorithm" : 0
     }
   },
+  "Prevent Opening in a Tab" : true,
   "Flashing Bell" : false,
   "Cursor Guide Color" : {
     "Red Component" : 0.50196081399917603,
@@ -163,7 +164,7 @@
   "Use Cursor Guide" : true,
   "Unlimited Scrollback" : true,
   "Custom Command" : "Yes",
-  "HotKey Key Code" : 111,
+  "HotKey Key Code" : 50,
   "Keyboard Map" : {
     "0xf700-0x260000" : {
       "Text" : "[1;6A",
@@ -361,7 +362,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.7098039984703064
   },
-  "Window Type" : 5,
+  "Window Type" : 9,
   "Use Bright Bold" : true,
   "Has Hotkey" : true,
   "HotKey Modifier Activation" : 0,
@@ -388,9 +389,9 @@
     "Alpha Component" : 1,
     "Green Component" : 0.26274502277374268
   },
-  "Name" : "Hotkey Window",
+  "Name" : "bytop",
   "Blinking Cursor" : false,
-  "Guid" : "1BF14E30-DBBC-4269-B007-8E82619605A6",
+  "Guid" : "6691B5BD-204D-4FAE-BB78-96E190D3F257",
   "Idle Code" : 0,
   "Ansi 10 Color" : {
     "Red Component" : 0.50588244199752808,
@@ -422,7 +423,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0
   },
-  "Cursor Type" : 0,
+  "Cursor Type" : 1,
   "Blur" : true,
   "Normal Font" : "FiraCode-Retina 12",
   "Vertical Spacing" : 1.01,
@@ -436,13 +437,13 @@
   },
   "Space" : -1,
   "HotKey Window AutoHides" : false,
-  "Command" : "\/usr\/local\/bin\/fish",
+  "Command" : "\/usr\/local\/bin\/\/bpytop",
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 0.98999999999999999,
   "Option Key Sends" : 0,
   "Only The Default BG Color Uses Transparency" : true,
   "HotKey Window Animates" : true,
-  "HotKey Modifier Flags" : 0,
+  "HotKey Modifier Flags" : 1048576,
   "Ansi 15 Color" : {
     "Red Component" : 0.99999743700027466,
     "Color Space" : "sRGB",
@@ -469,7 +470,10 @@
   },
   "Transparency" : 0,
   "Screen" : -1,
-  "HotKey Characters Ignoring Modifiers" : "",
+  "HotKey Characters Ignoring Modifiers" : "`",
+  "Bound Hosts" : [
+
+  ],
   "Non Ascii Font" : "Monaco 12",
   "Ansi 13 Color" : {
     "Red Component" : 0.72941190004348755,
@@ -478,7 +482,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.40784308314323425
   },
-  "Columns" : 40,
+  "Columns" : 180,
   "HotKey Alternate Shortcuts" : [
 
   ],
